@@ -1,32 +1,34 @@
-POST http://localhost:5260/anagram
+@host = http://localhost:5260
+
+POST {{host}}/anagram
 Content-Type: application/json
 
 {"word":  "tárol"}
 
 ###
 
-POST http://localhost:5260/anagram
+POST {{host}}/anagram
 Content-Type: application/json
 
 {"word":  "rrzáá"}
         
 ###
 
-POST http://localhost:5260/anagram
+POST {{host}}/anagram
 Content-Type: application/json
 
 {"word":  "xxxxx"}
 
 ###
 
-POST http://localhost:5260/anagram
+POST {{host}}/anagram
 Content-Type: application/json
 
 {"word":  "xx"}
 
 ###
 
-POST http://localhost:5260/anagram
+POST {{host}}/anagram
 Content-Type: application/json
 
 {"word":  "xxxxxx"}

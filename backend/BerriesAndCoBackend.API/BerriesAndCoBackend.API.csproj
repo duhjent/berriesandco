@@ -7,13 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <None Remove="words.txt" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Resource Include="Resources\words.txt">
+      <Content Include="Resources\words.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
+      </Content>
     </ItemGroup>
 
 </Project>

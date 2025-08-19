@@ -1,0 +1,17 @@
+services:
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+  caddy:
+    image: caddy:2.10
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
